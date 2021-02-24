@@ -1,0 +1,29 @@
+// Style guide variables
+
+// Layout
+$mobile-width: 375px;
+$desktop-width: 1440px;
+
+// Typography
+$font-size-body: 13px;
+$family: "Manrope", sans-serif;
+$weight-light: 500;
+$weight-heavy: 700;
+
+// Colours
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
