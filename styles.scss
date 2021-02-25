@@ -27,3 +27,86 @@ body,
 main {
   height: 100%;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-body;
+  font-family: $family;
+  background-color: $light-grayish-blue;
+
+  #container_main {
+    width: 735px;
+    height: 280px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 290px;
+    }
+
+    #container_content {
+      width: 445px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+
+      #content {
+        width: 365px;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        #heading {
+          height: 75px;
+          font-weight: $weight-heavy;
+          font-size: smaller;
+          color: $very-dark-grayish-blue;
+        }
+
+        #description {
+          height: 55px;
+          font-weight: $weight-light;
+          line-height: 1.5em;
+          color: $desaturated-dark-blue;
+        }
+
+        #profile {
+          height: 45px;
+          display: flex;
+
+          #image_profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+          }
+
+          #image_share {
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            background-color: $light-grayish-blue;
+          }
+
+          div {
+            padding-left: 12px;
+          }
+
+          #name {
+            font-weight: $weight-heavy;
+            color: $very-dark-grayish-blue;
+          }
+
+          #date {
+            font-weight: $weight-light;
+            color: $grayish-blue;
+          }
+        }
+      }
+    }
+  }
+}
