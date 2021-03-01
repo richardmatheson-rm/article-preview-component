@@ -94,10 +94,12 @@ main {
             width: 30px;
             height: 30px;
             border-radius: 40px;
-            background-color: $light-grayish-blue;
+            background-color: $grayish-blue;
             display: flex;
             justify-content: center;
             align-items: center;
+            // // mask: url(images/icon-share.svg) no-repeat center;
+            // clip: url(images/icon-share.svg);
 
             #share_modal {
               // display: none; // Hidden by default
@@ -148,12 +150,18 @@ main {
               }
             }
 
-            #image_share {
+            button {
               width: 15px;
               height: 15px;
-              // border-radius: 40px;
-              // background-color: $light-grayish-blue;
+              background-image: url(images/icon-share.svg);
+              border-radius: 50%;
+              border: none;
+              background-color: $grayish-blue;
             }
+            // #image_share {
+            //   width: 15px;
+            //   height: 15px;
+            // }
           }
 
           #profile_details {
