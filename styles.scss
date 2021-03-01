@@ -42,12 +42,26 @@ main {
     display: flex;
     border-radius: 10px;
     overflow: hidden;
+    @media screen and (max-width: $mobile-width) {
+      width: 330px;
+      height: 510px;
+      flex-direction: column;
+    }
 
     #image_container {
       width: 285px;
+      @media screen and (max-width: $mobile-width) {
+        width: 330px;
+        height: 200px;
+        overflow: hidden;
+      }
 
       img {
         height: 280px;
+        @media screen and (max-width: $mobile-width) {
+          width: 330px;
+          transform: translateY(-30px);
+        }
       }
     }
 
@@ -57,6 +71,11 @@ main {
       align-items: center;
       justify-content: center;
       background-color: white;
+      @media screen and (max-width: $mobile-width) {
+        width: 330px;
+        height: 310px;
+        flex-direction: column;
+      }
 
       #content {
         width: 365px;
@@ -64,12 +83,24 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media screen and (max-width: $mobile-width) {
+          width: 265px;
+          height: 250px;
+          justify-content: space-between;
+          transform: translateY(10px);
+        }
 
         #heading {
           height: 75px;
           font-weight: $weight-heavy;
           font-size: 10px;
           color: $very-dark-grayish-blue;
+          @media screen and (max-width: $mobile-width) {
+            font-size: 8px;
+            line-height: 3.2em;
+            height: 65px;
+            width: 265px;
+          }
         }
 
         #description {
@@ -77,12 +108,21 @@ main {
           font-weight: $weight-light;
           line-height: 1.5em;
           color: $desaturated-dark-blue;
+          @media screen and (max-width: $mobile-width) {
+            line-height: 1.6em;
+            width: 265px;
+            height: 90px;
+            letter-spacing: 0.015em;
+          }
         }
 
         #profile {
           height: 45px;
           display: flex;
           align-items: center;
+          @media screen and (max-width: $mobile-width) {
+            height: 40px;
+          }
 
           #image_profile {
             width: 40px;
@@ -163,6 +203,9 @@ main {
           #profile_details {
             padding-left: 12px;
             padding-right: 155px;
+            @media screen and (max-width: $mobile-width) {
+              padding-right: 60px;
+            }
           }
 
           #name {
