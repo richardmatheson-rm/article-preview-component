@@ -120,6 +120,7 @@ main #container_main #container_content #content #profile #share_container {
 }
 
 main #container_main #container_content #content #profile #share_container #share_modal {
+  display: none;
   position: fixed;
   z-index: 1;
   -webkit-transform: translateY(-70px);
