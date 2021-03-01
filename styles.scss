@@ -100,6 +100,7 @@ main {
             line-height: 3.2em;
             height: 65px;
             width: 265px;
+            font-weight: $weight-light;
           }
         }
 
@@ -122,6 +123,7 @@ main {
           align-items: center;
           @media screen and (max-width: $mobile-width) {
             height: 40px;
+            transform: translateY(7px);
           }
 
           #image_profile {
@@ -153,6 +155,14 @@ main {
               border-radius: 10px;
               background-color: $very-dark-grayish-blue;
               box-shadow: 0px 10px 15px $light-grayish-blue;
+              @media screen and (max-width: $mobile-width) {
+                width: 330px;
+                height: 65px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                // transform: translateY(10px);
+                transform: translateX(-108px);
+              }
 
               #modal_content {
                 width: 250px;
@@ -160,6 +170,10 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media screen and (max-width: $mobile-width) {
+                  height: 65px;
+                  width: 330px;
+                }
 
                 p {
                   color: $grayish-blue;
@@ -172,6 +186,19 @@ main {
                   width: 140px;
                   display: flex;
                   justify-content: space-evenly;
+                  @media screen and (max-width: $mobile-width) {
+                    // width: 150px;
+                  }
+                }
+
+                #hide_button {
+                  display: none;
+                  width: 25px;
+                  height: 25px;
+                  border-radius: 30px;
+                  @media screen and (max-width: $mobile-width) {
+                    display: block;
+                  }
                 }
               }
 
@@ -187,6 +214,9 @@ main {
                 border-right-color: transparent;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
+                @media screen and (max-width: $mobile-width) {
+                  display: none;
+                }
               }
             }
 
@@ -197,6 +227,12 @@ main {
               border-radius: 50%;
               border: none;
               background-color: $grayish-blue;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            button:hover {
+              cursor: pointer;
             }
           }
 
