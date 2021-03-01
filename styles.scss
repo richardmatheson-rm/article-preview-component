@@ -43,8 +43,12 @@ main {
     border-radius: 10px;
     overflow: hidden;
 
-    img {
-      width: 290px;
+    #image_container {
+      width: 285px;
+
+      img {
+        height: 280px;
+      }
     }
 
     #container_content {
@@ -64,7 +68,7 @@ main {
         #heading {
           height: 75px;
           font-weight: $weight-heavy;
-          font-size: smaller;
+          font-size: 10px;
           color: $very-dark-grayish-blue;
         }
 
@@ -78,6 +82,7 @@ main {
         #profile {
           height: 45px;
           display: flex;
+          align-items: center;
 
           #image_profile {
             width: 40px;
@@ -85,15 +90,26 @@ main {
             border-radius: 20px;
           }
 
-          #image_share {
+          #share_container {
             width: 30px;
             height: 30px;
             border-radius: 40px;
             background-color: $light-grayish-blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #image_share {
+              width: 15px;
+              height: 15px;
+              // border-radius: 40px;
+              // background-color: $light-grayish-blue;
+            }
           }
 
-          div {
+          div:nth-child(2) {
             padding-left: 12px;
+            padding-right: 155px;
           }
 
           #name {

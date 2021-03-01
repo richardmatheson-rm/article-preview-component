@@ -36,8 +36,12 @@ main #container_main {
   overflow: hidden;
 }
 
-main #container_main img {
-  width: 290px;
+main #container_main #image_container {
+  width: 285px;
+}
+
+main #container_main #image_container img {
+  height: 280px;
 }
 
 main #container_main #container_content {
@@ -72,7 +76,7 @@ main #container_main #container_content #content {
 main #container_main #container_content #content #heading {
   height: 75px;
   font-weight: 700;
-  font-size: smaller;
+  font-size: 10px;
   color: #48556a;
 }
 
@@ -88,6 +92,9 @@ main #container_main #container_content #content #profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main #container_main #container_content #content #profile #image_profile {
@@ -96,15 +103,30 @@ main #container_main #container_content #content #profile #image_profile {
   border-radius: 20px;
 }
 
-main #container_main #container_content #content #profile #image_share {
+main #container_main #container_content #content #profile #share_container {
   width: 30px;
   height: 30px;
   border-radius: 40px;
   background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main #container_main #container_content #content #profile div {
+main #container_main #container_content #content #profile #share_container #image_share {
+  width: 15px;
+  height: 15px;
+}
+
+main #container_main #container_content #content #profile div:nth-child(2) {
   padding-left: 12px;
+  padding-right: 155px;
 }
 
 main #container_main #container_content #content #profile #name {
